@@ -1,24 +1,28 @@
 package SkillBuilders;
 
+import java.util.Scanner;
+
 public class Digits {
 
 	public static void main(String[] args) {
 	
-	int num1 = 5;
-	int num2 = 3;
-	int result;
-	double num3 = 5;
-	double num4 = 3;
-	double doubleresult;
+	int num;
+	int firstDigit, secondDigit;
 	
-	result = num1 / num2;
-	System.out.println("num1 / num2: " + result);
 	
-	doubleresult =  num3 / num4;
-	System.out.println("num3 / num4: " + doubleresult);
+	Scanner input = new Scanner(System.in);
 	
-	doubleresult = num1 / num4
-
+	
+	System.out.println("Enter a two digit number: ");//Prompt
+	num = input.nextInt();//Input recording
+	
+	firstDigit = num / 10;
+	System.out.println("First digit is: " + firstDigit);
+	
+	secondDigit = num % 10;
+	System.out.println("second digit is: " + secondDigit);
+	
+	
 	}
 
 }
